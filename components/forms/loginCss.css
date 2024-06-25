@@ -1,0 +1,50 @@
+
+
+#wrapper-form {
+    width: 60vw;
+    margin: 0 auto;
+    height: auto;
+    
+}
+
+.form-ctrls {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+
+.controls-form {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.active-form-btn-dark{
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* loginCss.css */
+.controls-form {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: black;
+  }
+  
+  .controls-form-dark {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: white;
+  }
+  
+  .active-form-btn,.active-form-btn-dark {
+    color: #DA4438;
+  }

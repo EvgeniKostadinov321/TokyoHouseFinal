@@ -1,0 +1,108 @@
+#meal-detail-section {
+    height: auto;
+    width: 100%;
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal-box-wrapper {
+    border: 1px solid red;
+    height: auto;
+    padding: 50px 25px;
+}
+
+.form-single-meal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.meal-price-name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.single-meal-name {
+    margin-bottom: 15px;
+}
+
+.single-meal-detail-parag {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    max-width: 85%;
+}
+
+
+
+.quantity-detail-div {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.checkbox-meal-detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+}
+
+#ingred-wrapper {
+    
+    display: flex;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    column-gap: 15px;
+}
+
+.checkbox-ing-meal-details {
+    display: flex;
+    column-gap: 5px;
+    
+}
+
+.ingred-label {
+    color: red;
+    font-size: 1.25rem;
+}
+
+.image-single-meal-detail {
+    width: 210px;
+    height: 200px;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+#select-quantity-meal {
+    background: white;
+    color: gray;
+}
+
+
+#add-to-cart-btn {
+    height: 50px;
+    width: 160px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 25px;
+    -webkit-box-shadow: -4px 6px 5px 0px rgb(168, 41, 32);
+    -moz-box-shadow: -4px 6px 5px 0px rgb(168, 41, 32);
+    box-shadow: -4px 6px 5px 0px rgb(168, 41, 32);
+    align-self: center;
+}
+
+@media only screen and (max-width: 760px) { 
+    .meal-box-wrapper {
+        border: none;
+        
+    }
+}

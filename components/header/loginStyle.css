@@ -1,0 +1,11 @@
+.auth-form-wrapper {
+    position: absolute;
+    width: 60vw;
+    height: 80vh;
+    left: 0;
+    right: 0;
+    top: 10vh;
+    margin: 0 auto;
+    z-index: 999;
+    background: rgb(87, 53, 53)
+}

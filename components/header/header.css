@@ -1,0 +1,156 @@
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px; 
+    position: relative;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #DA4438;
+    z-index: 999;
+}
+
+
+
+.links-wrapper {
+    height: 60px;
+}
+
+#left-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+#middle-nav {
+    border: 1px solid #DA4438;
+    border-radius: 50px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
+}
+
+#right-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: auto;
+    
+}
+
+.circle-nav-icons {
+    border: 1px solid #DA4438;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icons-header-comp {
+    width: 20px;
+    height: 20px;
+}
+
+.icons-header-comp:hover{
+    cursor: pointer;
+}
+
+.circle-nav-icons:hover{
+    cursor: pointer;
+}
+
+#burger_icon_component {
+    display: none;
+}
+
+#opennedBrgMenu {
+    display: none;
+}
+
+#closedBrgMenu {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    #burger_icon_component {
+        display: flex;
+        height: 40px;
+        width: 40px;
+    }
+
+    #middle-nav {
+        display: none;
+    }
+
+    #right-nav {
+        display: none;
+    }
+
+
+    #closedBrgMenu {
+        display: none;
+    }
+
+    .closedControls_div {
+        position: absolute;
+        top: 25px;
+        width: 100%;
+        height: fit-content;
+        padding-right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #close_menu_btn {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    #opennedBrgMenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #F7F6F1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 100;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        background: #F7F6F1;
+    }
+
+    #dark_background_header {
+        padding-top: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: #F7F6F1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 100;
+        padding-bottom: 100px;
+        background: black;
+    }
+}

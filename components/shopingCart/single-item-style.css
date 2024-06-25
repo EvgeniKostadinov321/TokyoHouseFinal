@@ -1,0 +1,75 @@
+
+
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+    min-height: 140px;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+
+
+
+
+.remove-order-component-btn {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background: transparent;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+
+.remove-order-component-btn-dark {
+    height: 40px;
+    width: 60px;
+    border: none;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.order-name_details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.information-meal-sigle-price-plus-quantity {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) { 
+    .container-image-order {
+        display: none;
+    }
+
+    .items-wrappper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 720px) { 
+    .header-single-order-element {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,313 @@
+
+
+#home-section {
+    height: 100vh;
+    width: 100%;
+    max-height: 100vh;
+    padding: 125px 25px 0px 25px;
+    overflow: hidden;   
+}
+
+
+
+#hero_h1 {
+    font-size: 6rem;
+    max-width: 1000px;
+    margin-bottom: 15px;
+}
+
+#hero_paragh {
+    font-size: 3rem;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+
+#hero_ord_btn {
+    height: 60px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+
+    -webkit-box-shadow: -4px 6px 5px 0px rgb(168, 41, 32);
+    -moz-box-shadow: -4px 6px 5px 0px rgb(168, 41, 32);
+    box-shadow: -4px 6px 5px 0px rgb(168, 41, 32);
+}
+
+
+#sushiSetHero_absolute {
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    right: -100px;
+    top: 3vh;
+    
+}
+
+
+
+
+
+#sushiSetHero_absolute {
+    animation-name: sushiHeroMove;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes sushiHeroMove {
+    0% {
+        transform: rotate(0deg);
+        top: 3vh;
+    }
+
+    100% {
+        transform: rotate(-25deg);
+        top: 6vh;
+    }
+  }
+
+
+
+
+  #absolute_span_hero {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 60px;
+    width: 100vw;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+  }
+
+
+  .movable-absolute-div {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    
+    width: fit-content;
+
+    animation: 15s linear 1s infinite alternate movingText;
+
+    position: absolute;
+    overflow: hidden;
+  }
+
+.madeWith_love {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    column-gap: 45px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    min-width: 300px;
+}
+
+
+
+  @keyframes movingText {
+    0% {
+        left: -50vw;
+    }
+
+    25% {
+        left: 0vw;
+    }
+
+    50% {
+        left: 20vw;
+    }
+
+    75% {
+        left: 0vw;
+    }
+
+    100% {
+        left: -50vw;
+    }
+   
+  }
+
+
+
+
+
+  @media only screen and (max-width: 1250px) {
+    #sushiSetHero_absolute {
+        height: 650px;
+        width: 650px;
+        position: absolute;
+        right: -100px;
+        top: 3vh;
+        
+    }
+
+    #hero_h1 {
+        font-size: 3rem;
+        max-width: 500px;
+        margin-bottom: 50px;
+    }
+
+    .textImageHero {
+        height: 50px;
+        width: 50px;
+        
+    } 
+
+    #hero_paragh {
+        font-size: 2.5rem;
+        max-width: 650px;
+        margin-bottom: 100px;
+    }
+
+
+    #sushiSetHero_absolute {
+        height: 450px;
+        width: 450px;
+        position: absolute;
+        right: 0px;
+        top: 28vh;
+
+        
+    }
+
+    @keyframes sushiHeroMove {
+        0% {
+            transform: rotate(0deg);
+            top: 28vh;
+        }
+    
+        100% {
+            transform: rotate(-25deg);
+            top: 30vh;
+        }
+      }
+
+}
+
+
+@media only screen and (max-width: 1075px) {
+    
+
+    #hero_h1 {
+        font-size: 2rem;
+        max-width: 450px;
+        margin-bottom: 50px;
+        line-height: 50px;
+    }
+
+
+
+    #hero_paragh {
+        font-size: 1.75rem;
+        max-width: 550px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 450px) {
+   
+
+    #sushiSetHero_absolute {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        right: 0px;
+        top: 40vh;
+        
+    }
+
+    @keyframes sushiHeroMove {
+        0% {
+            transform: rotate(0deg);
+            top: 40vh;
+        }
+    
+        100% {
+            transform: rotate(0deg);
+            top: 40vh;
+        }
+      }
+
+    #hero_h1 {
+        font-size: 1.5rem;
+        max-width: 95%;
+        width: 95%;
+        margin-bottom: 50px;
+        line-height: 30px;
+
+        
+    }
+
+    #hero_paragh {
+        font-size: 1.75rem;
+        max-width: 550px;
+    }
+
+    .textImageHero {
+        height: 20px;
+        width: 20px;
+    }
+ }
+
+
+ @media only screen and (max-width: 390px) {
+
+    #sushiSetHero_absolute {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        right: 0px;
+        top: 40vh;
+        
+    }
+
+    #hero_h1 {
+        font-size: 1.15rem;
+        max-width: 80%;
+        width: 80%;
+        margin-bottom: 50px;
+        line-height: 20px;
+
+        
+        
+    }
+
+    #hero_paragh {
+        font-size: 1rem;
+        max-width: 550px;
+    }
+
+    #hero_ord_btn {
+        width: 150px;
+        height: 50px;
+    }
+
+    .textImageHero {
+        height: 15px;
+        width: 15px;
+    }
+
+
+    @keyframes sushiHeroMove {
+        0% {
+            transform: rotate(0deg);
+            top: 40vh;
+        }
+    
+        100% {
+            transform: rotate(0deg);
+            top: 40vh;
+        }
+      }
+ }
